@@ -1,0 +1,269 @@
+@import "libs"
+@import "base"
+
+
+.nav
+
+	ul
+		display: flex
+		justify-content: space-between
+
+	a
+		position: relative
+		z-index: 1
+		color: $green
+
+		&::before
+			content: ''
+			width: 0
+			transform: scale(0)
+			transition: all .3s
+			position: absolute
+			bottom: 0
+			width: 100%
+			height: 1px
+			background-color: $text
+			z-index: -1
+
+		&:hover,
+		&:focus
+			color: $text
+			text-decoration: none
+			&::before
+				transform: scale(1)
+
+
+.header
+	position: fixed
+	right: 0
+	left: 0
+	padding: 15px 0 0
+	transition: all .3s
+	z-index: 1001
+
+	a
+		color: $text
+
+
+	&--active, &--menu
+		padding: 5px 0
+
+	&__container
+		position: relative
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+	&__col
+		position: relative
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+	&__logo
+		display: block
+		margin-right: 30px
+		width: 225px
+		margin-right: 15px
+
+		img
+			width: 100%
+
+	&__nav
+		margin-top: 25px
+
+		li
+			margin-right: 15px
+			&:last-child
+				margin-right: 0
+
+		a
+			font-size: 16px
+
+	&__info
+		display: flex
+		flex-direction: column
+		margin-right: 50px
+
+		a
+			display: flex
+			justify-content: space-between
+			align-items: center
+			text-align: right
+			font-size: 20px
+			line-height: 1.1
+			margin-bottom: 3px
+
+			&:last-child
+				margin-bottom: 0
+
+			&:hover,
+			&:focus
+				span
+					text-decoration: none
+					&::before
+						transform: scale(1)
+
+		span
+			position: relative
+			z-index: 1
+
+			&::before
+				content: ''
+				width: 0
+				transform: scale(0)
+				transition: all .3s
+				position: absolute
+				bottom: 0
+				width: 100%
+				height: 1px
+				background-color: $text
+				z-index: -1
+
+		img
+			margin-right: 15px
+
+	&__soc
+		display: flex
+
+		a
+			display: block
+			margin-right: 8px
+			position: relative
+
+			&:hover
+				&:before
+					transform: translate(-50%, -50%) scale(1)
+
+
+			&:before
+				content: ''
+				position: absolute
+				top: 50%
+				left: 50%
+				width: 95%
+				height: 95%
+				transform: translate(-50%, -50%) scale(0)
+				background: $green
+				transition: all .6s
+				z-index: -1
+
+
+.navigation
+	position: fixed
+	right: 0
+	left: 0
+	top: 135px
+	transition: all .3s
+	z-index: 1001
+
+
+	&__container
+		position: relative
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+	&__nav
+
+		li
+			margin-right: 35px
+
+		a
+			font-size: 26px
+			line-height: 1
+
+			&::after
+				content: '/'
+				position: absolute
+				right: -25px
+
+			&::before
+				background: $green
+
+			&:hover,
+			&:focus
+				color: $green
+
+
+
+	.action
+		color: $red
+
+		&::after
+			content: url(../img/action.png)
+
+		&:hover,
+		&:focus
+			color: $red
+			&::before
+				background: $red
+
+	&__info
+		display: flex
+		justify-content: space-between
+		align-items: flex-end
+		color: $green
+		font-size: 20px
+		line-height: 1
+
+		&_login
+			position: relative
+			padding-left: 30px
+			margin-right: 10px
+
+			img
+				position: absolute
+				bottom: 0
+				left: 0
+			a
+				color: $green
+				font-size: 20px
+				line-height: 1
+				position: relative
+				z-index: 1
+
+				&::before
+					content: ''
+					width: 0
+					transform: scale(0)
+					transition: all .3s
+					position: absolute
+					bottom: 0
+					width: 100%
+					height: 1px
+					background-color: $green
+					z-index: -1
+
+				&:hover,
+				&:focus
+					color: $green
+					text-decoration: none
+					&::before
+						transform: scale(1)
+
+
+		&_basket
+			margin-right: 30px
+			position: relative
+
+			span
+				position: absolute
+				right: -13px
+				top: 0
+				background: $red
+				width: 25px
+				height: 25px
+				border-radius: 50%
+				color: #fff
+				line-height: 25px
+				text-align: center
+				font-size: 14px
+
+
+.footer
+	height: 1000px
+
+
+@import "page"
+@import "media" // Always at the end
