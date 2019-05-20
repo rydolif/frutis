@@ -12,18 +12,19 @@
 		position: relative
 		z-index: 1
 		color: $green
+		transition: all .6s
 
 		&::before
 			content: ''
-			width: 0
-			transform: scale(0)
-			transition: all .3s
 			position: absolute
 			bottom: 0
+			width: 0
+			transition: all .6s
 			width: 100%
 			height: 1px
 			background-color: $text
 			z-index: -1
+			transform: scale(0)
 
 		&:hover,
 		&:focus
@@ -35,10 +36,11 @@
 
 .header
 	position: fixed
+	top: 0
 	right: 0
 	left: 0
 	padding: 15px 0 0
-	transition: all .3s
+	transition: all .6s
 	z-index: 1001
 
 	a
@@ -46,7 +48,7 @@
 
 
 	&--active, &--menu
-		padding: 5px 0
+		top: -100px
 
 	&__container
 		position: relative
@@ -79,6 +81,8 @@
 
 		a
 			font-size: 16px
+
+
 
 	&__info
 		display: flex
@@ -154,9 +158,14 @@
 	right: 0
 	left: 0
 	top: 135px
-	transition: all .3s
+	transition: all .6s
 	z-index: 1001
 
+	&--active, &--menu
+		top: 0
+		background: #fff
+		padding: 10px 0
+		box-shadow: 0 0 10px 0 rgba(0,0,0, .2)
 
 	&__container
 		position: relative
@@ -177,13 +186,24 @@
 				content: '/'
 				position: absolute
 				right: -25px
+				color: $green
 
 			&::before
+				top: 50%
+				left: 50%
+				bottom: auto
+				height: 35px
+				width: 112%
+				border-radius: 22px 15px 29px 15px
 				background: $green
+				transform: translate(-50%, -50%) scale(0)
 
 			&:hover,
 			&:focus
-				color: $green
+				color: #fff
+
+				&::before
+					transform: translate(-50%, -50%) scale(1)
 
 
 
@@ -193,9 +213,12 @@
 		&::after
 			content: url(../img/action.png)
 
+		&::before
+			background: $red
+
 		&:hover,
 		&:focus
-			color: $red
+			color: #fff
 			&::before
 				background: $red
 
@@ -261,8 +284,202 @@
 				font-size: 14px
 
 
+.main
+	padding-top: 190px
+	
+	&__bg
+		width: 100%
+
+
+.shop
+
+	&__list
+		display: flex
+		flex-wrap: wrap
+		margin-top: 50px
+
+	&__item
+		position: relative
+		width: 25%
+		padding: 20px 30px 40px
+		background-repeat: no-repeat
+		background-position: center
+		background-size: cover
+		transition: all .3s
+		margin-bottom: 50px
+		z-index: 1
+
+		&:hover
+			background-image: url(../img/shop-item-bg.png)
+			box-shadow: 10px 10px 10px 0 rgba(0,0,0, .2)
+
+			&::before,
+			&::after
+				opacity: 1
+
+			&::before
+				top: -55px
+
+			&::after
+				bottom: -45px
+
+		&::after,
+		&::before
+			content: ''
+			position: absolute
+			left: 50%
+			transform: translate(-50%, 0)
+			width: 100%
+			height: 50px
+			background-repeat: no-repeat
+			background-position: center
+			transition: all .6s
+			opacity: 0
+			z-index: -1
+
+		&::before
+			background-image: url(../img/shop-item-top.png)
+			top: 0
+
+		&::after
+			background-image: url(../img/shop-item-bottom.png)
+			bottom: 0
+			
+
+
+		&_action
+			display: flex
+			justify-content: flex-end
+			margin-bottom: 15px
+
+			span
+				display: inline-block
+				margin-left: 10px
+				color: #fff
+				border-radius: 10px
+				padding: 5px 8px
+				line-height: 1
+				font-family: $title
+
+			&--red
+				background: $red
+
+			&--green
+				background: $green
+
+			&--orange
+				background: $orange
+
+		h3
+			font-size: 30px
+			line-height: 1
+
+		&_sub-title
+			margin-bottom: 10px
+
+		&_price
+			line-height: 1
+			margin-bottom: 10px
+
+			span
+				display: inline-block
+
+			&--old
+				font-size: 18px
+				text-decoration: line-through
+				margin-right: 15px
+
+			&--green
+				font-size: 30px
+				color: $green
+				margin-right: 15px
+
+			&--red
+				font-size: 30px
+				color: $red
+				margin-right: 15px
+
+			&--weight
+				margin-right: 0
+
+		&_img
+			width: 100%
+			margin-bottom: 30px
+
+			img
+				width: 100%
+				height: auto
+
+		&_form
+			display: flex
+			align-items: center
+			justify-content: space-between
+
+			&--btn
+				border-radius: 15px
+				border: 2px solid $green
+				height: 45px
+				width: 45px
+
+				&:hover,
+				&:focus
+					background: $green
+
+			&--input
+				border-radius: 15px
+				border: 2px solid #ebebeb
+				height: 45px
+				width: 45px
+				text-align: center
+				font-size: 18px
+				line-height: 45px
+				text-align: center
+
+			&--input-btn
+				background: #ebebeb
+				border-radius: 15px
+				height: 45px
+				width: 45px
+				border: 2px solid #ebebeb
+				font-size: 36px
+				line-height: 30px
+				color: #676767
+				font-family: $title
+
+
 .footer
-	height: 1000px
+	padding: 60px 0 30px
+
+	a
+		color: $text
+
+	p
+		font-size: 18px
+		color: #757575
+
+	&__container
+		position: relative
+		display: flex
+		justify-content: space-between
+		align-items: center
+	
+	&__col
+		display: flex
+		align-items: center
+
+	&__logo
+		display: block
+		margin-right: 40px
+	
+	&__info
+		flex-direction: row
+		margin-right: 50px
+
+		a
+			margin-right: 20px
+			&:last-child
+				margin-right: 0
+
 
 
 @import "page"
