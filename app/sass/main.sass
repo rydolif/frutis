@@ -1,6 +1,12 @@
 @import "libs"
 @import "base"
 
+.list
+	position: relative
+	display: flex
+	justify-content: space-between
+	align-items: center
+
 
 .header
 	position: fixed
@@ -18,16 +24,10 @@
 		top: -100px
 
 	&__container
-		position: relative
-		display: flex
-		justify-content: space-between
-		align-items: center
+		@extend .list
 
 	&__col
-		position: relative
-		display: flex
-		justify-content: space-between
-		align-items: center
+		@extend .list
 
 	&__logo
 		display: block
@@ -83,9 +83,7 @@
 		margin-right: 50px
 
 		a
-			display: flex
-			justify-content: space-between
-			align-items: center
+			@extend .list
 			text-align: right
 			font-size: 20px
 			line-height: 1.1
@@ -164,10 +162,7 @@
 		box-shadow: 0 0 10px 0 rgba(0,0,0, .2)
 
 	&__container
-		position: relative
-		display: flex
-		justify-content: space-between
-		align-items: center
+		@extend .list
 
 	&__nav
 		ul
@@ -225,7 +220,6 @@
 
 	.action
 		color: $red
-
 
 		&::after
 			content: ''
@@ -314,6 +308,108 @@
 	
 	&__bg
 		width: 100%
+
+
+.hero
+	padding-bottom: 30px
+
+	.container
+		position: absolute
+		top: 50%
+		left: 0
+		right: 0
+		transform: translate(0, -50%)
+		
+	&__item
+		min-height: 780px
+		background-repeat: no-repeat
+		background-position: top center
+		position: relative
+		text-align: center
+		color: #fff
+		line-height: 1.1
+
+		&_content
+			margin-left: 70px
+
+		&_action
+			font-size: 90px
+			line-height: .8
+			color: #ff3c3c
+			margin-bottom: 20px
+
+			span
+				text-transform: uppercase
+
+		&_btn
+			margin-bottom: 60px
+
+		&_text
+			font-size: 24px
+			line-height: 1.1
+
+		&_logo
+			margin-bottom: 10px
+			width: 370px
+
+		&_sub-logo
+			font-size: 42px
+			color: #1c8a3e
+			line-height: 1
+			margin-bottom: 25px
+
+		&_big-text
+			font-size: 36px
+
+			span
+				color: #6f9c32
+
+			b
+				font-size: 60px
+
+		&_min-text
+			font-size: 18px
+
+	&__pagination
+		display: flex
+		justify-content: center
+		align-items: center
+		bottom: 0
+		height: 22px
+
+		.swiper-pagination-bullet
+			background: #82ba01
+			opacity: 1
+			transition: all .6s
+			margin: 0 10px !important
+			cursor: pointer
+
+		.swiper-pagination-bullet-active
+			width: 22px
+			height: 22px
+
+
+.section-btn
+
+	&--top
+		padding-top: 50px
+		padding-bottom: 20px
+
+	&--bottom
+		padding-bottom: 70px
+
+
+	&__container
+		display: flex
+		justify-content: center
+	
+
+
+	.btn
+		margin-right: 15px
+
+		&:last-child
+			margin-right: 0
 
 
 .shop
@@ -436,9 +532,7 @@
 				height: auto
 
 		&_form
-			display: flex
-			align-items: center
-			justify-content: space-between
+			@extend .list
 			max-width: 250px
 			margin: 0 auto
 
@@ -497,6 +591,85 @@
 					background: $green
 					color: #fff
 					border-color: $green
+	
+
+	&__btn
+		display: flex
+		justify-content: center
+		margin-bottom: 80px
+
+
+.reviews
+	padding-top: 85px
+	padding-bottom: 190px
+	background-image: url(../img/reviews-bg.png)
+	background-position: center
+	background-size: auto 100%
+	overflow: visible
+
+	h2
+		font-size: 60px
+		color: #fff
+		font-family: $fonts
+		font-weight: 400
+		text-align: center
+
+	p
+		color: #fff
+		font-size: 24px
+		margin-bottom: 40px
+
+	span,
+	time
+		font-size: 16px
+
+	&__slider
+		width: 78%
+		margin: 0 auto
+
+	&__item
+		padding: 70px 90px 50px 90px
+
+		&_info
+			text-align: right
+
+		&_hooks
+			position: absolute
+			top: 0
+			left: 5px
+
+
+	.swiper-button-prev,
+	.swiper-button-next
+		background-image: url(../img/arrow.png)
+		width: 32px
+		background-size: 32px 44px
+
+	.swiper-button-prev
+		left: 0
+
+	.swiper-button-next
+		transform: rotate(180deg)
+
+	&__pagination
+		display: flex
+		justify-content: center
+		align-items: center
+		bottom: 0
+		height: 22px
+
+		.swiper-pagination-bullet
+			background: #fff
+			transition: all .6s
+			cursor: pointer
+			width: 10px
+			height: 10px
+			opacity: .45
+
+		.swiper-pagination-bullet-active
+			width: 15px
+			height: 15px
+			opacity: 1
 
 
 .footer
@@ -510,14 +683,10 @@
 		color: #757575
 
 	&__container
-		position: relative
-		display: flex
-		justify-content: space-between
-		align-items: center
+		@extend .list
 	
 	&__col
-		display: flex
-		align-items: center
+		@extend .list
 
 	&__logo
 		display: block

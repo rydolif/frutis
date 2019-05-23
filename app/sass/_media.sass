@@ -1,6 +1,20 @@
 
-@media only screen and (max-width : 1199px)
 
+@media only screen and (max-width : 1920px)
+	.hero
+		&__item
+			background-size: cover
+			min-height: 600px
+			background-position: center
+
+	.reviews
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: top center
+
+
+@media only screen and (max-width : 1199px)
+	
 	.header
 		&__logo
 			width: 160px
@@ -58,6 +72,13 @@
 
 	.main
 		padding-top: 135px
+
+	.hero
+		&__item
+			min-height: 570px
+
+			&_sub-logo
+				font-size: 34px
 	
 	.shop
 		&__list
@@ -80,6 +101,56 @@
 
 
 @media only screen and (max-width : 992px)
+	.reviews
+		padding-top: 40px
+		padding-bottom: 100px
+
+		&__slider
+			width: 100%
+
+		&__item
+			padding: 40px
+
+		p
+			margin-bottom: 20px
+			font-size: 18px
+
+		h2
+			font-size: 44px
+	
+	h1
+		font-size: 42px
+
+		b
+			font-size: 60px
+
+	.hero
+		&__item
+			min-height: 520px
+
+			&:nth-child(1),
+			&:nth-child(3)
+				background-position: 74% 0
+
+			&_big-text
+				font-size: 26px
+
+				b
+					font-size: 48px
+
+			&_action
+				font-size: 60px
+
+	.section-btn
+		&--bottom
+			padding-bottom: 40px
+
+		&--top
+			padding: 20px 0
+
+
+	.shop__btn
+		margin-bottom: 40px
 
 	.header
 		background: rgba(255, 255, 255, .95)
@@ -187,6 +258,20 @@
 
 
 @media only screen and (max-width : 767px)
+	.hero__item
+		&_sub-logo
+			font-size: 28px
+
+
+		&_content
+			margin-left: 0
+
+
+	.section-btn
+		&__container
+			flex-wrap: wrap
+
+
 	.shop
 		&__list
 			margin-top: 15px
@@ -220,8 +305,28 @@
 
 
 @media only screen and (max-width : 576px)
+	
+	.hero__item
+		min-height: 450px
+
+		&_btn
+			margin-bottom: 30px
+
+		&_big-text b
+			font-size: 34px
+
+		&_action
+			font-size: 50px
+
+		&_text
+			font-size: 20px
+
+	h1 b
+		font-size: 50px
+
+
 	.nav
-		top: 55px
+		top: 54px
 
 	.header
 
@@ -246,8 +351,24 @@
 				margin-bottom: 0
 
 
-
 @media only screen and (max-width : 480px)
+	.hero__item
+		&_logo
+			max-width: 290px
+
+		&_action
+			font-size: 48px
+			margin-bottom: 10px
+
+		&_text
+			font-size: 16px
+
+	h1
+		font-size: 36px
+
+		b
+			font-size: 40px
+
 	.header
 		&__info,
 		&__soc
@@ -258,6 +379,11 @@
 		width: 70%
 		margin: 0 auto 15px
 		padding: 30px
+		background-image: url(../img/shop-item-bg.png)
+
+	.btn--hero
+		width: 230px
+		height: 75px
 
 @media only screen and (max-width : 400px)
 

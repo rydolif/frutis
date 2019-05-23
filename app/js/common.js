@@ -1,5 +1,33 @@
 $(function() {
 
+
+//------------------------------hero slider-----------------------------
+  var swiper = new Swiper('.hero', {
+    spaceBetween: 30,
+    pagination: {
+      el: '.hero__pagination',
+    },
+    autoplay: {
+      delay: 5000,
+    },
+  });
+
+//------------------------------hero slider-----------------------------
+  var swiper = new Swiper('.reviews__slider', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.reviews__pagination',
+    },
+    autoplay: {
+      delay: 5000,
+    },
+  });
+
+
+
 //------------------------------гамбургер-----------------------------
   $('.hamburger').click(function() {
     $(this).toggleClass('hamburger--active');

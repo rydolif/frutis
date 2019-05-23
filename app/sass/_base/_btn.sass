@@ -1,19 +1,23 @@
 .btn
 	position: relative
 	display: inline-block
-	height: 50px
+	width: 210px
+	height: 60px
 	border: none
 	outline: none
-	padding: 0 30px
 	border-radius: 4px
-	background: #fff
+	background: transparent
+	font-family: $title
 	text-align: center
-	text-transform: uppercase
-	font-size: 12px
-	color: #000
-	line-height: 50px
-	font-weight: 700
+	font-size: 24px
+	line-height: 1
+	color: $green
+	line-height: 60px
 	letter-spacing: .2px
+	background-image: url(../img/btn.png)
+	background-size: contain
+	background-repeat: no-repeat
+	background-position: center
 
 	&:hover,
 	&:focus
@@ -22,6 +26,48 @@
 		text-decoration: none
 		cursor: pointer
 		transition: all .3s
-		box-shadow: 0 5px 10px rgba($text, .4)
-		color: #000
+		color: #fff
+		background-image: url(../img/btn--active.png)
+
+	&--shop
+		width: 135px
+		background-image: url(../img/btn--more.png)
+		color: #ff9c13
+
+		&:hover,
+		&:focus
+			background-image: url(../img/btn--more--active.png)
+
+	&--hero
+		position: relative
+		display: inline-block
+		width: 257px
+		height: 85px
+		border: none
+		outline: none
+		border-radius: 4px
+		background: transparent
+		font-family: $title
+		text-align: center
+		font-size: 24px
+		line-height: 1
+		color: #fff
+		line-height: 40px
+		letter-spacing: .2px
+		padding-top: 13px
+		background-image: url(../img/hero__btn.png)
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center
+
+		&:hover,
+		&:focus
+			outline: none
+			border: none
+			text-decoration: none
+			cursor: pointer
+			transition: all .3s
+			color: #fff
+			background-image: url(../img/hero__btn--active.png)
+
 
