@@ -706,6 +706,86 @@
 				margin-right: 0
 
 
+.question
+	padding-top: 30px
+	min-height: 50vh
+
+	h2
+		text-align: center
+		font-size: 36px
+		color: #696969
+		font-weight: 400
+		font-family: $fonts
+		margin-bottom: 20px
+
+	&__block
+		position: relative
+		padding: 30px 110px 30px 80px
+		border: 5px solid transparent
+		margin-bottom: 45px
+		font-size: 16px
+		transition: all .3s
+
+		&::before
+			content: url(../img/question__item--before.png)
+			position: absolute
+			top: -10px
+			left: 50%
+			transform: translate(-50%, 0)
+			transition: all .3s
+
+
+		&--active
+			box-shadow: 15px 15px 10px 0 rgba(0,0,0, .2)
+			border-image: url(../img/border.png)
+			border-image-slice: 20
+			border-image-repeat: round
+			border-image-width: 15px
+
+			&::before
+				opacity: 0
+
+			.question__block_header
+				span
+					color: #ff9c13
+					border: 1px solid #ff9c13
+
+					&::before
+						content: '-'
+
+		&_header
+			font-weight: 600
+			transition: all .3s
+
+			span
+				position: absolute
+				right: 20px
+				top: 20px
+				height: 30px
+				width: 30px
+				border: 1px solid $green
+				border-radius: 4px
+				font-size: 36px
+				color: $green
+				transition: all .3s
+
+				&::before
+					content: '+'
+					position: absolute
+					top: 50%
+					left: 50%
+					transform: translate(-50%, -50%)
+			
+
+		&_content
+			color: #82ba01
+			margin-top: 30px
+			text-align: right
+			padding-left: 100px
+
+
+
+
 
 @import "page"
 @import "media" // Always at the end
