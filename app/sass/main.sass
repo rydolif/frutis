@@ -996,6 +996,93 @@
 			align-items: center
 
 
+.cabinet
+	min-height: 50vh
+
+	h2, h3
+		font-family: $fonts
+		font-weight: 400
+
+	h2
+		text-align: center
+		font-size: 36px
+		margin-bottom: 60px
+
+	h3
+		font-size: 24px
+		margin-bottom: 30px
+
+	&__container
+		border: 1px solid #ebebeb
+
+	&__form
+		max-width: 460px
+		margin: 0 auto
+		padding: 35px 15px 55px
+
+		&_line
+			margin: 30px 0
+			display: flex
+			justify-content: space-between
+			align-items: center
+
+			div
+				width: 48%
+
+			label
+				position: relative
+				padding-left: 25px
+				color: $text
+				cursor: pointer
+				margin-bottom: 0
+
+				&::before,
+				&::after
+					content: ''
+					position: absolute
+					left: 0
+
+				&::before
+					width: 20px
+					height: 20px
+					border: 3px solid $text
+
+				&::after
+					width: 8px
+					height: 8px
+					background: $green
+					left: 6px
+					top: 6px
+					transition: all .6s
+
+			input[type="checkbox"]
+				display: none
+
+			input[type="checkbox"]:checked + label::after
+				transform: scale(1)
+
+			input[type="checkbox"] + label::after
+				transform: scale(0)
+
+		&_input
+			margin-bottom: 15px
+		
+			&--two
+				display: flex
+				justify-content: space-between
+				align-items: center
+
+				div
+					width: 48%
+
+		&_btn
+			display: flex
+			justify-content: center
+			margin-top: 55px
+
+
+	.btn--shop
+		width: 210px
 
 @import "page"
 @import "media" // Always at the end

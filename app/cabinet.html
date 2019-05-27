@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Action</title>
+	<title>Cabinet</title>
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -11,7 +11,6 @@
 	<meta name="theme-color" content="#000">
 
 	<link href="https://fonts.googleapis.com/css?family=Neucha|Philosopher:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
-
 
 	<link rel="stylesheet" href="css/main.min.css?v=1">
 
@@ -109,61 +108,63 @@
 
 	<main class="main">
 
-		<section class="action">
+		<section class="cabinet">
 			<div class="container">
 				
-				<h2>Акции</h2>
+				<h2>Личный кабинет</h2>
 
-				<div class="action__list">
+				<div class="cabinet__container">
+					<form class="cabinet__form form">
 
-					<div class="action__item">
-						<div class="action__item_img">
-							<img src="img/shop-item1.png" alt="">
-						</div>
-						<div class="action__item_content">
-							<h3>“Lorem ipsum dolor sit amet”</h3>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat?
-							</p>
-							<div class="action__item_info">
-								<time datetime="2019-10-10">24/09/2019</time>
-								<a href="#">Подробнее</a>
+						<div class="cabinet__form_line">
+							<div>
+								<input type="checkbox" id="remember">
+								<label for="remember">Мужской</label>
+							</div>
+							<div>
+								<input type="checkbox" id="remember1">
+								<label for="remember1">Женский</label>
 							</div>
 						</div>
-					</div>
 
-					<div class="action__item">
-						<div class="action__item_img">
-							<img src="img/shop-item1.png" alt="">
+						<div class="cabinet__form_input">
+							<input type="text" name="name" required placeholder="Имя">
 						</div>
-						<div class="action__item_content">
-							<h3>“Lorem ipsum dolor sit amet”</h3>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat?
-							</p>
-							<div class="action__item_info">
-								<time datetime="2019-10-10">24/09/2019</time>
-								<a href="#">Подробнее</a>
+						<div class="cabinet__form_input">
+							<input type="tel" name="tel" required placeholder="Телефон">
+						</div>
+						<div class="cabinet__form_input">
+							<input type="email" name="mail" required placeholder="Email">
+						</div>
+
+						<div class="cabinet__form_line">
+							<input type="checkbox" id="remember2">
+							<label for="remember2">Получать уведомления по електронной почте</label>
+						</div>
+
+						<h3>+ Добавить адрес</h3>
+
+						<div class="cabinet__form_input">
+							<input type="text" name="sity" required placeholder="Москва">
+						</div>
+						<div class="cabinet__form_input">
+							<input type="text" name="sity" required placeholder="Улица*">
+						</div>
+
+						<div class="cabinet__form_input--two">
+							<div class="cabinet__form_input">
+								<input type="text" name="sity" required placeholder="Дом*">
+							</div>
+							<div class="cabinet__form_input">
+								<input type="text" name="sity" required placeholder="Квартира">
 							</div>
 						</div>
-					</div>
-					
-					<div class="action__item">
-						<div class="action__item_img">
-							<img src="img/shop-item1.png" alt="">
-						</div>
-						<div class="action__item_content">
-							<h3>“Lorem ipsum dolor sit amet”</h3>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat?
-							</p>
-							<div class="action__item_info">
-								<time datetime="2019-10-10">24/09/2019</time>
-								<a href="#">Подробнее</a>
-							</div>
-						</div>
-					</div>
 
+						<div class="cabinet__form_btn">
+							<button type="submit" class="btn btn--shop btn--packing" name="submit">Отправить</button>
+						</div>
+
+					</form>
 				</div>
 
 			</div>
