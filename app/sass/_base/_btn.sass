@@ -83,8 +83,38 @@
 
 		&:hover,
 		&:focus
+			c
 			border: 5px solid transparent
 			border-image: url(../img/btn--more--active.png)
 			border-image-slice: 21
 			border-image-repeat: round
 			border-image-width: 35px
+
+
+.button
+	width: 47%
+	position: relative
+	display: inline-block
+	height: 40px
+	border: none
+	outline: none
+	border-radius: 40px
+	background: transparent
+	font-family: $title
+	text-align: center
+	font-size: 18px
+	line-height: 1
+	color: $green
+	line-height: 40px
+	letter-spacing: .2px
+	transition: all .3s
+	border: 1px solid $green
+
+	&:hover,
+	&:focus
+		background-color: $green
+		outline: none
+		border: 1px solid $green
+		text-decoration: none
+		cursor: pointer
+		color: #fff

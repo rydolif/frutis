@@ -14,6 +14,20 @@
 
 
 @media only screen and (max-width : 1199px)
+	.order
+		&__basket
+			padding: 0 15px
+
+		&__registration
+			padding: 15px
+
+			&_form
+				width: 50%
+				padding: 15px
+
+			.cabinet__form_input--two
+				margin-bottom: 15px
+
 	.action__list
 		width: 100%
 
@@ -115,6 +129,30 @@
 
 
 @media only screen and (max-width : 992px)
+	.order
+		h2,
+		h3
+			margin-bottom: 20px
+
+		&__basket
+			&_item,
+			&_total
+				padding: 15px 0
+
+			&_name
+				font-size: 18px
+
+			&_price
+				font-size: 20px
+
+
+		&__registration
+			justify-content: center
+
+			&_form
+				width: 100%
+				margin: 0 auto
+
 	.action
 		&__item
 			padding: 15px
@@ -216,6 +254,7 @@
 		background: rgba(255, 255, 255, .95)
 		transition: all .3s
 		padding-bottom: 60px
+		box-shadow: 0 10px 10px 0 rgba(0,0,0, .2)
 
 		ul
 			display: flex
@@ -293,6 +332,19 @@
 
 
 @media only screen and (max-width : 767px)
+	.order__basket
+		&_item
+			flex-direction: column
+
+			p, div
+				width: 100%
+				text-align: center
+
+		&_close
+			position: absolute
+			top: 15px
+			right: 0
+
 	.action
 		h2
 			margin-bottom: 30px
@@ -447,6 +499,34 @@
 
 
 @media only screen and (max-width : 480px)
+	.order
+		&__registration
+			&_text
+				margin-bottom: 20px
+
+				p,
+				ul
+					font-size: 16px
+					margin-bottom: 10px
+
+				h2
+					font-size: 32px
+					margin-bottom: 20px
+
+			&_form
+				padding: 0
+
+				&--btn
+					flex-wrap: wrap
+
+			.button
+				width: 100%
+				margin-bottom: 15px
+
+		&__basket_total
+			font-size: 24px
+
+
 	.action
 	
 		h2

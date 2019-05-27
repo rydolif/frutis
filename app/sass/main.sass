@@ -241,8 +241,6 @@
 
 		&::after
 			content: ''
-			top: 50%
-			transform: translate(0, -50%)
 			background-image: url(../img/action.png)
 			background-size: contain
 			background-position: center
@@ -309,7 +307,8 @@
 
 .main
 	padding-top: 190px
-	
+	min-height: 50vh
+
 	&__bg
 		width: 100%
 
@@ -724,7 +723,6 @@
 
 .question
 	padding-top: 30px
-	min-height: 50vh
 
 	h2
 		text-align: center
@@ -803,7 +801,6 @@
 .contacts
 	padding-top: 50px
 	padding-bottom: 30px
-	min-height: 50vh
 	text-align: center
 
 	h2
@@ -887,7 +884,6 @@
 
 .packing
 	padding-top: 70px
-	min-height: 50vh
 	text-align: center
 
 	h2
@@ -902,7 +898,7 @@
 		line-height: 1.1
 
 	
-.action
+.stock
 	padding-top: 30px
 
 	h2, h3
@@ -997,7 +993,6 @@
 
 
 .cabinet
-	min-height: 50vh
 
 	h2, h3
 		font-family: $fonts
@@ -1014,11 +1009,22 @@
 
 	&__container
 		border: 1px solid #ebebeb
+		box-shadow: 10px 10px 10px 0 rgba(0,0,0, .2)
+		margin-bottom: 15px
 
 	&__form
 		max-width: 460px
 		margin: 0 auto
 		padding: 35px 15px 55px
+
+		input
+			padding: 0 20px
+			background: #e4f0c7
+
+		textarea
+			padding: 10px 20px
+			background: #e4f0c7
+			height: 95px
 
 		&_line
 			margin: 30px 0
@@ -1029,9 +1035,15 @@
 			div
 				width: 48%
 
+			a
+				color: $text
+				&:hover,
+				&:focus
+					text-decoration: underline
+
 			label
 				position: relative
-				padding-left: 25px
+				padding-left: 40px
 				color: $text
 				cursor: pointer
 				margin-bottom: 0
@@ -1071,6 +1083,7 @@
 				display: flex
 				justify-content: space-between
 				align-items: center
+				margin-bottom: 40px
 
 				div
 					width: 48%
@@ -1083,6 +1096,114 @@
 
 	.btn--shop
 		width: 210px
+
+
+.order
+	padding-top: 30px
+
+	h2, h3
+		font-family: $fonts
+		font-weight: 400
+		text-align: center
+		margin-bottom: 40px
+
+	h2
+		font-size: 36px
+		
+	h3
+		font-size: 24px
+
+
+	&__basket
+		border: 1px solid #ebebeb
+		box-shadow: 10px 10px 10px 0 rgba(0,0,0, .2)
+		margin-bottom: 65px
+		padding: 0 70px
+
+		&_name
+			font-size: 24px
+			font-weight: 700
+
+		&_img
+			width: 150px
+
+		&_item
+			position: relative
+			display: flex
+			justify-content: space-between
+			align-items: center
+			padding: 20px 0 40px 0
+			border-bottom: 1px solid #ebebeb
+
+			p, div
+				width: 20%
+
+		&_form
+			width: 150px
+			margin: 0
+
+		&_price
+			font-size: 30px
+			color: $green
+
+		&_total
+			display: flex
+			justify-content: flex-end
+			padding: 25px 0
+			font-size: 30px
+			font-weight: 700
+			color: $red
+
+			span:first-child
+				display: inline-block
+				margin-right: 40px
+
+	&__registration
+		padding-top: 40px
+		padding-bottom: 60px
+
+		&_text
+			margin-bottom: 40px
+
+			p, ul
+				font-size: 18px
+				margin-bottom: 20px
+
+				span
+					text-transform: uppercase
+					color: $red
+
+			p
+				text-indent: 20px
+
+		&_wrap
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			width: 100%
+			font-size: 16px
+
+		&_form
+			margin: 0
+			width: 100%
+
+			&--btn
+				display: flex
+				justify-content: space-between
+				margin-bottom: 20px
+		
+		&_btn
+			width: 100%
+			display: flex
+			justify-content: center
+			align-items: center
+
+			.btn
+				width: 220px
+
+
+
+
 
 @import "page"
 @import "media" // Always at the end

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Order</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="icon" href="img/favicon.ico">
+	<meta name="theme-color" content="#000">
+
+	<link href="https://fonts.googleapis.com/css?family=Neucha|Philosopher:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/main.min.css?v=1">
+
+</head>
+
+<body>
+
+
+	<header class="header">
+		<div class="header__container container">
+
+			<div class="header__col">
+				<a href="index.html"  class="header__logo">
+					<img src="img/logo.png" alt="logo">
+				</a>
+				<nav class="header__nav nav">
+					<ul>
+						<li><a href="#">Как заказать</a></li>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Вопрос/Ответ</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#">Подарочная Упаковка</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="header__col">
+
+				<div class="header__info">
+					<a href="mailto:info@fruitymall.ru">
+						<img src="img/mail.png" alt="">
+						<span>info@fruitymall.ru</span>
+					</a>
+					<a href="tel:+1234567890">
+						<img src="img/phone.png" alt="">
+						<span>+1234567890</span>
+					</a>
+				</div>
+
+				<div class="header__soc">
+					<a href="#" target="_blank"><img src="img/fb.png" alt=""></a>
+					<a href="#" target="_blank"><img src="img/in.png" alt=""></a>
+					<a href="#" target="_blank"><img src="img/vk.png" alt=""></a>
+				</div>
+
+				<button class="hamburger" type="button">
+					<span class="hamburger__box">
+						<span class="hamburger__item"></span>
+					</span>
+				</button>
+
+			</div>
+
+		</div>
+	</header>
+
+	<div class="navigation">
+		<div class="navigation__container container">
+
+			<nav class="navigation__nav nav">
+				<ul>
+					<li><a href="#">Фрукты</a></li>
+					<li><a href="#">Ягоды</a></li>
+					<li><a href="#">Орехи</a></li>
+					<li><a href="#">Сухофрукты</a></li>
+					<li><a href="#">Готовые коробки</a></li>
+					<li><a href="#" class="action">Акции</a></li>
+				</ul>
+				<ul class="navigation__nav_page">
+					<li><a href="#">Как заказать</a></li>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Вопрос/Ответ</a></li>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">Подарочная Упаковка</a></li>
+				</ul>
+			</nav>
+
+			<div class="navigation__info">
+
+				<div class="navigation__info_login">
+					<img src="img/login.png" alt="">
+					<a href="#">ivanovivan@mail.ru</a>
+				</div>
+
+				<a href="#" class="navigation__info_basket">
+					<img src="img/basket.png" alt="">
+					<span>13</span>
+				</a>
+
+				<p class="navigation__info_place">5000 руб.</p>
+			</div>
+
+		</div>
+	</div>
+
+	<main class="main">
+
+		<section class="order">
+			<div class="container">
+				
+				<h2>Корзина:</h2>
+
+				<div class="order__basket">
+					<div class="order__basket_item">
+						<div>
+							<img src="img/shop-item1.png" alt="" class="order__basket_img">
+						</div>
+						<p class="order__basket_name">Питахайя Питахайя Питахайя Питахайя Питахайя</p>
+						<form class="order__basket_form shop__item_form">
+							<button class="shop__item_form--input-btn">-</button>
+							<input type="number" class="shop__item_form--input" value="1">
+							<button class="shop__item_form--input-btn">+</button>
+						</form>
+						<p class="order__basket_price">1 50000 руб.</p>
+						<a href="#" class="order__basket_close">
+							<img src="img/close.png" alt="">
+						</a>
+					</div>
+
+					<div class="order__basket_item">
+						<div>
+							<img src="img/shop-item2.png" alt="" class="order__basket_img">
+						</div>
+						<p class="order__basket_name">Питахайя</p>
+						<form class="order__basket_form shop__item_form">
+							<button class="shop__item_form--input-btn">-</button>
+							<input type="number" class="shop__item_form--input" value="1">
+							<button class="shop__item_form--input-btn">+</button>
+						</form>
+						<p class="order__basket_price">1 500 руб.</p>
+						<a href="#" class="order__basket_close">
+							<img src="img/close.png" alt="">
+						</a>
+					</div>
+
+					<div class="order__basket_total">
+						<span>Итого:</span>
+						<span>3 000 руб.</span>
+					</div>
+				</div>
+
+				<div class="order__registration order__basket">
+					
+					<div class="order__registration_text">
+						<h2>Оформление заказа</h2>
+
+						<p>
+							Наш курьер доставит заказ по указанному Вами адресу .В день доставки курьер свяжется с Вами ориентировочно за 30-40 минут для предупреждения о выезде по адресу доставки. 
+						</p>
+
+						<p>
+							<b>Стоимость доставки: </b>
+						</p>
+
+						<ul>
+							<li>Доставка до 2000 - 350 руб</li>
+							<li>Доставка до 4000 - 200 руб</li>
+							<li>Доставка до 6000 - 100 руб</li>
+							<li>Доставка от 6 000 руб. - <span>БЕССПЛАТНО!</span></li>
+						</ul>
+
+						<p>
+							Закажи на сумму от 6000 рублей и выберете <span>в подарок любимый фрукт</span> (манго, маракуйя,мангостин, лонган, черимойя, рамбутан, карамбола, гуава)!
+							<br>
+							Подробности у нашего оператора!
+						</p>
+					</div>
+
+					<div class="order__registration_wrap">
+
+						<form class="order__registration_form cabinet__form form">
+
+							<h3>Данные покупателя:</h3>
+								
+							<div class="cabinet__form_input">
+								<input type="text" name="name" required placeholder="Имя*">
+							</div>
+							<div class="cabinet__form_input">
+								<input type="text" name="lastname" required placeholder="Фамилия">
+							</div>
+							<div class="cabinet__form_input">
+								<input type="tel" name="tel" required placeholder="Телефон*">
+							</div>
+							<div class="cabinet__form_input">
+								<input type="email" name="mail" required placeholder="Email">
+							</div>
+
+							<p>
+								*        - Поля обязательные к заполнению
+							</p>
+
+							<div class="cabinet__form_line">
+								<input type="checkbox" id="remember2">
+								<label for="remember2">Я ознакомлен и согласен с <a href="#">Условиями использования и обработки моих персональных данных</a></label>
+							</div>
+
+						</form>
+
+						<form class="order__registration_form cabinet__form form">
+
+							<h3>Информация по доставке:</h3>
+
+							<div class="order__registration_form--btn">
+								<a href="#" class="button">Себе</a>
+								<a href="#" class="button button--img">В подарок</a>
+							</div>
+
+							<div class="cabinet__form_input">
+								<input type="text" name="sity" required placeholder="Москва">
+							</div>
+							<div class="cabinet__form_input">
+								<input type="text" name="sity" required placeholder="Улица*">
+							</div>
+
+							<div class="cabinet__form_input--two">
+								<div class="cabinet__form_input">
+									<input type="text" name="sity" required placeholder="Дом*">
+								</div>
+								<div class="cabinet__form_input">
+									<input type="text" name="sity" required placeholder="Квартира">
+								</div>
+							</div>
+
+							<div class="cabinet__form_input--two">
+								<textarea name="comments" id="" cols="30" rows="10" placeholder="Комментарий к заказу"></textarea>
+							</div>
+
+							<div class="order__registration_form--btn">
+								<a href="#" class="button">Стандартная доставка</a>
+								<a href="#" class="button button--img">Экспресс доставка</a>
+							</div>
+
+						</form>
+
+						<div class="order__registration_btn">
+							<button type="submit" class="btn btn--shop btn--packing" name="submit">Оформить заказ!</button>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="footer">
+		<div class="footer__container container">
+
+			<div class="footer__col">
+				<a href="#" class="footer__logo">
+					<img src="img/logo-footer.png" alt="">
+				</a>
+				<p>© 2019, Все права защищены</p>
+			</div>
+
+			<div class="footer__col">
+				<div class="footer__info header__info">
+					<a href="mailto:info@fruitymall.ru">
+						<img src="img/mail.png" alt="">
+						<span>info@fruitymall.ru</span>
+					</a>
+					<a href="tel:+1234567890">
+						<img src="img/phone.png" alt="">
+						<span>+1234567890</span>
+					</a>
+				</div>
+				<div class="footer__soc header__soc">
+					<a href="#" target="_blank"><img src="img/fb.png" alt=""></a>
+					<a href="#" target="_blank"><img src="img/in.png" alt=""></a>
+					<a href="#" target="_blank"><img src="img/vk.png" alt=""></a>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+
+	<!-- modal -->
+		<div class="modal" id="order">
+			<form action="sendmail.php" class="form" method="post">
+
+				<button class="close order_close" type="button">
+					<span></span>
+					<span></span>
+				</button>
+
+				<h3>Оставьте заявку, <br>мы свяжемся с Вами</h3>
+				<input type="hidden" name="subject" value="Узнать подробнее!">
+
+				<div class="">
+					<input type="text" name="name" placeholder="Имя" required>
+				</div>
+				<div class="">
+					<input type="tel" name="phone" required placeholder="Телефон">
+				</div>
+				<div class="">
+					<button type="submit" class="btn" name="submit">Отправить</button>
+				</div>
+				<p>Нажимая на кнопку, вы даете согласие <br>на обработку своих <a href="#" target="_blank">персональных данных</a></p>
+
+			</form>
+		</div>
+
+		<div class="modal" id="thanks">
+			<button class="close thanks_close" type="button">
+				<span></span>
+				<span></span>
+			</button>
+			<h3>Спасибо <br>за доверие!</h3>
+			<p>Мы обязательно с вами свяжемся!</p>
+		</div>
+	<!-- modal end-->
+
+	<script src="js/scripts.min.js"></script>
+
+
+</body>
+</html>
