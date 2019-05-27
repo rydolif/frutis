@@ -1,4 +1,17 @@
 $(function() {
+    
+//---------------------------js-----------------------
+  $('.tabs__wrap').hide();
+  $('.tabs__wrap:first').show();
+  $('.tabs div a:first').addClass('active');
+   $('.tabs div a').click(function(event){
+    event.preventDefault();
+    $('.tabs div a').removeClass('active');
+    $(this).addClass('active');
+    $('.tabs__wrap').hide();
+     var selectTab = $(this).attr('href');
+    $(selectTab).fadeIn();
+  });
 
 //------------------------------acardeon---------------------------
   $(".block__content").slideUp("slow");
@@ -30,7 +43,7 @@ $(function() {
     },
   });
 
-//------------------------------hero slider-----------------------------
+//------------------------------revievs slider-----------------------------
   var swiper = new Swiper('.reviews__slider', {
     navigation: {
       nextEl: '.swiper-button-next',

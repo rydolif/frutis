@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Basket</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="icon" href="img/favicon.ico">
+	<meta name="theme-color" content="#000">
+
+	<link href="https://fonts.googleapis.com/css?family=Neucha|Philosopher:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+
+
+	<link rel="stylesheet" href="css/main.min.css?v=1">
+
+</head>
+
+<body>
+
+
+	<header class="header">
+		<div class="header__container container">
+
+			<div class="header__col">
+				<a href="index.html"  class="header__logo">
+					<img src="img/logo.png" alt="logo">
+				</a>
+				<nav class="header__nav nav">
+					<ul>
+						<li><a href="#">Как заказать</a></li>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Вопрос/Ответ</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#">Подарочная Упаковка</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="header__col">
+
+				<div class="header__info">
+					<a href="mailto:info@fruitymall.ru">
+						<img src="img/mail.png" alt="">
+						<span>info@fruitymall.ru</span>
+					</a>
+					<a href="tel:+1234567890">
+						<img src="img/phone.png" alt="">
+						<span>+1234567890</span>
+					</a>
+				</div>
+
+				<div class="header__soc">
+					<a href="#" target="_blank"><img src="img/fb.png" alt=""></a>
+					<a href="#" target="_blank"><img src="img/in.png" alt=""></a>
+					<a href="#" target="_blank"><img src="img/vk.png" alt=""></a>
+				</div>
+
+				<button class="hamburger" type="button">
+					<span class="hamburger__box">
+						<span class="hamburger__item"></span>
+					</span>
+				</button>
+
+			</div>
+
+		</div>
+	</header>
+
+	<div class="navigation">
+		<div class="navigation__container container">
+
+			<nav class="navigation__nav nav">
+				<ul>
+					<li><a href="#">Фрукты</a></li>
+					<li><a href="#">Ягоды</a></li>
+					<li><a href="#">Орехи</a></li>
+					<li><a href="#">Сухофрукты</a></li>
+					<li><a href="#">Готовые коробки</a></li>
+					<li><a href="#" class="action">Акции</a></li>
+				</ul>
+				<ul class="navigation__nav_page">
+					<li><a href="#">Как заказать</a></li>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Вопрос/Ответ</a></li>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">Подарочная Упаковка</a></li>
+				</ul>
+			</nav>
+
+			<div class="navigation__info">
+
+				<div class="navigation__info_login">
+					<img src="img/login.png" alt="">
+					<a href="#">ivanovivan@mail.ru</a>
+				</div>
+
+				<a href="#" class="navigation__info_basket">
+					<img src="img/basket.png" alt="">
+					<span>13</span>
+				</a>
+
+				<p class="navigation__info_place">5000 руб.</p>
+			</div>
+
+		</div>
+	</div>
+
+	<main class="main">
+
+		<div class="container">
+			<img src="img/header-bg.png" alt="" class="main__bg">
+		</div>
+
+		<section class="shop" id="app">
+			<div class="container">
+
+				<div class="shop__list">
+					
+					<div class="shop__item">
+						<div>
+							<div class="shop__item_action">
+								<span class="shop__item_action--red">Акция</span>
+								<span class="shop__item_action--orange">Популярное</span>
+							</div>
+							<h3>Папайя</h3>
+							<p class="shop__item_sub-title">( Страна происхождения  - Вьетнам )</p>
+							<div class="shop__item_price">
+								<span class="shop__item_price--old">76 руб.</span>
+								<span class="shop__item_price--red">50 руб.</span>
+								<span class="shop__item_price--weight">(250 гр 1 шт.)</span>
+							</div>
+							<div class="shop__item_img">
+								<img src="img/shop-item1.png" alt="">
+							</div>
+							<div class="shop__item_text">
+								<p>
+									Папайя (950-1200 гр.), Манго Тайланд ( 2 шт), Манго Кат Чу 1 шт; , Питахайя белая (1 шт.). Рамбутан (250 гр.). Черимойя 1 шт; . Мангостин 3 шт; , Лонган (350 гр.), Гуава (1шт), Кокос, Гранадилла (1 шт.)
+								</p>
+							</div>
+						</div>
+						<form class="shop__item_form">
+							<button class="shop__item_form--btn"><svg><use xlink:href="#zoom"></use></svg></button>
+							<button class="shop__item_form--input-btn">-</button>
+							<input type="number" class="shop__item_form--input" value="1">
+							<button class="shop__item_form--input-btn">+</button>
+							<button class="shop__item_form--btn"><svg><use xlink:href="#shopping-cart"></use></svg></button>
+						</form>
+					</div>
+					
+					<div class="shop__item">
+						<div>
+							<div class="shop__item_action">
+								<span class="shop__item_action--orange">Популярное</span>
+								<span class="shop__item_action--green">Новинка</span>
+							</div>
+							<h3>Папайя</h3>
+							<p class="shop__item_sub-title">( Страна происхождения  - Вьетнам )</p>
+							<div class="shop__item_price">
+								<span class="shop__item_price--green">50 руб.</span>
+								<span class="shop__item_price--weight">(250 гр 1 шт.)</span>
+							</div>
+							<div class="shop__item_img">
+								<img src="img/shop-item2.png" alt="">
+							</div>
+							<div class="shop__item_text">
+								<p>
+									Кокос питьевой (1 шт, Манго Нам Док Май 2 шт, Манго Кат-Чу 3 шт; Манго Вьетнам (1 шт), Ананас Пхукет (1кг / шт ), Питахайя белая ( 1 шт. ), Питахайя красная, Гуава (1 шт), Рамбутан (250 гр.), Лонган (250 гр.), Мангостин (250 гр), Маракуйя (4 шт), Карамбола (1 шт), Черимойя (1 шт), Желтый арбуз. Папайя.
+								</p>
+							</div>
+						</div>
+						<form class="shop__item_form">
+							<button class="shop__item_form--btn"><svg><use xlink:href="#zoom"></use></svg></button>
+							<button class="shop__item_form--input-btn">-</button>
+							<input type="number" class="shop__item_form--input" value="1">
+							<button class="shop__item_form--input-btn">+</button>
+							<button class="shop__item_form--btn"><svg><use xlink:href="#shopping-cart"></use></svg></button>
+						</form>
+					</div>
+
+					<div class="shop__item">
+						<div>
+							<div class="shop__item_action">
+								<span class="shop__item_action--orange">Популярное</span>
+								<span class="shop__item_action--green">Новинка</span>
+							</div>
+							<h3>Папайя</h3>
+							<p class="shop__item_sub-title">( Страна происхождения  - Вьетнам )</p>
+							<div class="shop__item_price">
+								<span class="shop__item_price--green">50 руб.</span>
+								<span class="shop__item_price--weight">(250 гр 1 шт.)</span>
+							</div>
+							<div class="shop__item_img">
+								<img src="img/shop-item2.png" alt="">
+							</div>
+							<div class="shop__item_text">
+								<p>
+									Кокос питьевой (1 шт), Манго Нам Док Май 2 шт;, Манго Кат-Чу 3 шт;, Манго Вьетнам (1 шт). Ананас Пхукет (1кг / шт), Питахайя белая ( 1 шт. ), Питахайя красная;, Гуава (1 шт)
+									Рамбутан (250 гр.), Лонган (250 гр.), Мангостин (250 гр), Маракуйя (4 шт). Карамбола (1 шт), Гранадилла (1 шт.), Черимойя (1 шт).
+								</p>
+							</div>
+						</div>
+						<form class="shop__item_form">
+							<button class="shop__item_form--btn"><svg><use xlink:href="#zoom"></use></svg></button>
+							<button class="shop__item_form--input-btn">-</button>
+							<input type="number" class="shop__item_form--input" value="1">
+							<button class="shop__item_form--input-btn">+</button>
+							<button class="shop__item_form--btn"><svg><use xlink:href="#shopping-cart"></use></svg></button>
+						</form>
+					</div>
+					
+					<div class="shop__item">
+						<div>
+							<div class="shop__item_action">
+								<span class="shop__item_action--red">Акция</span>
+								<span class="shop__item_action--orange">Популярное</span>
+							</div>
+							<h3>Папайя</h3>
+							<p class="shop__item_sub-title">( Страна происхождения  - Вьетнам )</p>
+							<div class="shop__item_price">
+								<span class="shop__item_price--old">76 руб.</span>
+								<span class="shop__item_price--red">50 руб.</span>
+								<span class="shop__item_price--weight">(250 гр 1 шт.)</span>
+							</div>
+							<div class="shop__item_img">
+								<img src="img/shop-item1.png" alt="">
+							</div>
+							<div class="shop__item_text">
+								<p>
+									Кокос питьевой (1 шт), Манго Нам Док Май 2 шт;, Манго Кат-Чу 3 шт;, Манго Вьетнам (1 шт). Ананас Пхукет (1кг / шт), Питахайя белая ( 1 шт. ), Питахайя красная;
+								</p>
+							</div>
+						</div>
+						<form class="shop__item_form">
+							<button class="shop__item_form--btn"><svg><use xlink:href="#zoom"></use></svg></button>
+							<button class="shop__item_form--input-btn">-</button>
+							<input type="number" class="shop__item_form--input" value="1">
+							<button class="shop__item_form--input-btn">+</button>
+							<button class="shop__item_form--btn"><svg><use xlink:href="#shopping-cart"></use></svg></button>
+						</form>
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="footer">
+		<div class="footer__container container">
+
+			<div class="footer__col">
+				<a href="#" class="footer__logo">
+					<img src="img/logo-footer.png" alt="">
+				</a>
+				<p>© 2019, Все права защищены</p>
+			</div>
+
+			<div class="footer__col">
+				<div class="footer__info header__info">
+					<a href="mailto:info@fruitymall.ru">
+						<img src="img/mail.png" alt="">
+						<span>info@fruitymall.ru</span>
+					</a>
+					<a href="tel:+1234567890">
+						<img src="img/phone.png" alt="">
+						<span>+1234567890</span>
+					</a>
+				</div>
+				<div class="footer__soc header__soc">
+					<a href="#" target="_blank"><img src="img/fb.png" alt=""></a>
+					<a href="#" target="_blank"><img src="img/in.png" alt=""></a>
+					<a href="#" target="_blank"><img src="img/vk.png" alt=""></a>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+
+	<!-- modal -->
+		<div class="modal" id="order">
+			<form action="sendmail.php" class="form" method="post">
+
+				<button class="close order_close" type="button">
+					<span></span>
+					<span></span>
+				</button>
+
+				<h3>Оставьте заявку, <br>мы свяжемся с Вами</h3>
+				<input type="hidden" name="subject" value="Узнать подробнее!">
+
+				<div class="">
+					<input type="text" name="name" placeholder="Имя" required>
+				</div>
+				<div class="">
+					<input type="tel" name="phone" required placeholder="Телефон">
+				</div>
+				<div class="">
+					<button type="submit" class="btn" name="submit">Отправить</button>
+				</div>
+				<p>Нажимая на кнопку, вы даете согласие <br>на обработку своих <a href="#" target="_blank">персональных данных</a></p>
+
+			</form>
+		</div>
+
+		<div class="modal" id="thanks">
+			<button class="close thanks_close" type="button">
+				<span></span>
+				<span></span>
+			</button>
+			<h3>Спасибо <br>за доверие!</h3>
+			<p>Мы обязательно с вами свяжемся!</p>
+		</div>
+	<!-- modal end-->
+
+	<script src="js/scripts.min.js"></script>
+
+
+</body>
+</html>

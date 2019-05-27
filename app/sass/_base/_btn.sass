@@ -18,14 +18,14 @@
 	background-size: contain
 	background-repeat: no-repeat
 	background-position: center
-
+	transition: all .3s
+	
 	&:hover,
 	&:focus
 		outline: none
 		border: none
 		text-decoration: none
 		cursor: pointer
-		transition: all .3s
 		color: #fff
 		background-image: url(../img/btn--active.png)
 
@@ -70,4 +70,22 @@
 			color: #fff
 			background-image: url(../img/hero__btn--active.png)
 
+	
+	&--packing
+		width: 270px
+		height: 65px
+		background-image: none
+		border: 5px solid transparent
+		border-image: url(../img/btn--more.png)
+		border-image-slice: 21
+		border-image-repeat: round
+		border-image-width: 35px
 
+		&:hover,
+		&:focus
+			border: 5px solid transparent
+			
+			border-image: url(../img/btn--more--active.png)
+			border-image-slice: 21
+			border-image-repeat: round
+			border-image-width: 35px
